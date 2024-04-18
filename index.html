@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-LDwosLjz+uScZd4BrmVS4Zv5O3Ny2Q6Ndc/H7/uY0mRYUVXe8hlSs/s7Kz8DKfNN2ZbKz7YFNLbgEJt7EN3x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo"><a href="#">Web Dev Creative</a></div>
+            <ul class="links">
+                <li><a href="hero"><i class="fas fa-home"></i> Home</a></li> 
+                <li><a href="about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="services"><i class="fas fa-tools"></i> Services</a></li>
+                <li><a href="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- Dropdown Menu -->
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="hero"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="services"><i class="fas fa-tools"></i> Services</a></li>
+                <li><a href="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+            </ul>
+        </div>
+        <!-- Slider Container -->
+        <div id="slider-container">
+            <div id="slider">
+                <div class="slide">
+                    <img src="https://img.freepik.com/fotos-premium/ilustracao-da-galaxia-com-estrelas-e-poeira-espacial-no-universo_564714-239.jpg" alt="Universo 1">
+                </div>
+                <div class="slide">
+                    <img src="https://super.abril.com.br/wp-content/uploads/2019/12/james-stone_gettyimages_estrela_brilhante_orion.jpg?quality=90&strip=info&w=720&h=440&crop=1">
+                </div>
+                <div class="slide">
+                    <img src="https://mega.ibxk.com.br/2015/11/23/23121756376136.jpg?ims=1032x490">
+                </div>
+                <div class="slide">
+                    <img src="https://t2.tudocdn.net/292221?w=824&h=494">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Welcome<br><br></h1>
+            <p> Não importa se você é um entusiasta da astronomia, um amante da ciência ou simplesmente alguém em busca de uma experiência única, o Universo Galaxia tem algo para todos. Nossas viagens são projetadas para serem inclusivas e educativas, adequadas para todas as idades e níveis de interesse.   </p>
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const dropdownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function() {
+            dropdownMenu.classList.toggle("open");
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
